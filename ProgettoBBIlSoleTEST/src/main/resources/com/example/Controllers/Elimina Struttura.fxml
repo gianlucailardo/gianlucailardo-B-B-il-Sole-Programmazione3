@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="600.0" style="-fx-background-color: #efc6ac;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="298.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../iconeprog3/logo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="91.0" prefHeight="380.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="25.0" layoutY="14.0" text="Città" textFill="#462504">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField disable="true" layoutX="25.0" layoutY="34.0" prefHeight="19.0" prefWidth="370.0" promptText="Città" />
+            <Label layoutX="25.0" layoutY="60.0" text="Indirizzo" textFill="#462504">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField disable="true" layoutX="25.0" layoutY="80.0" prefHeight="19.0" prefWidth="370.0" promptText="Indirizzo" />
+            <Label layoutX="25.0" layoutY="105.0" text="CAP" textFill="#462504">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField disable="true" layoutX="25.0" layoutY="125.0" prefHeight="19.0" prefWidth="370.0" promptText="CAP" />
+            <Label layoutX="25.0" layoutY="150.0" text="Capienza" textFill="#462504">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField disable="true" layoutX="25.0" layoutY="170.0" prefHeight="19.0" prefWidth="370.0" promptText="Capienza" />
+            <Label layoutX="25.0" layoutY="195.0" text="Numero di camere" textFill="#462504">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField disable="true" layoutX="25.0" layoutY="215.0" prefHeight="19.0" prefWidth="370.0" promptText="Numero di camere" />
+            <Label layoutX="25.0" layoutY="240.0" text="Distanza dalle principali attrazioni" textFill="#462504">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField disable="true" layoutX="25.0" layoutY="260.0" prefHeight="19.0" prefWidth="370.0" promptText="Distanza dalle principali attrazioni" />
+            <Label layoutX="25.0" layoutY="285.0" text="Vicinanza ai servizi di trasporto" textFill="#462504">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <TextField disable="true" layoutX="25.0" layoutY="305.0" prefHeight="19.0" prefWidth="370.0" promptText="Vicinanza ai servizi di trasporto" />
+            <Label layoutX="25.0" layoutY="343.0" text="Disponibilità di parcheggio privato" textFill="#462504">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <RadioButton disable="true" layoutX="265.0" layoutY="341.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="55.0" text="Si">
+               <toggleGroup>
+                  <ToggleGroup fx:id="parcheggio" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton disable="true" layoutX="320.0" layoutY="341.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="55.0" text="No" toggleGroup="$parcheggio" />
+            <Label layoutX="146.0" layoutY="1.0" prefHeight="26.0" prefWidth="350.0" text="Vuoi eliminare definitivamente la struttura selezionata?" textFill="#462504">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button layoutX="411.0" layoutY="29.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="175.0" style="-fx-background-color: #3ddcca;" text="Conferma" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button layoutX="413.0" layoutY="81.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="170.0" text="Torna allo Homapage">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="68.0" fitWidth="65.0" layoutX="511.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../iconeprog3/error.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

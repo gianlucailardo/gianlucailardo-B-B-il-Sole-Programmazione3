@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="600.0" style="-fx-background-color: #efc6ac;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controllers.ControllerVisualizzaP">
+   <children>
+      <ImageView fitHeight="79.0" fitWidth="298.0" layoutX="50.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../iconeprog3/logo.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="93.0" prefHeight="381.0" prefWidth="600.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Button fx:id="Buttonhp" layoutX="411.0" layoutY="342.0" mnemonicParsing="false" onAction="#BackHome" prefHeight="25.0" prefWidth="175.0" text="Torna allo Homapage">
+               <font>
+                  <Font name="Century Gothic Bold" size="13.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tableView" layoutX="12.0" layoutY="53.0" prefHeight="265.0" prefWidth="576.0">
+               <columns>
+                  <TableColumn fx:id="CFColumn" prefWidth="134.0" sortable="false" text="Codice Fiscale" />
+                  <TableColumn fx:id="CinColumn" minWidth="0.0" prefWidth="71.0" sortable="false" text="Check-in" />
+                  <TableColumn fx:id="CoutColumn" prefWidth="74.5" sortable="false" text="Check-out" />
+                  <TableColumn fx:id="CittaColumn" prefWidth="104.0" sortable="false" text="Città Struttura" />
+                  <TableColumn fx:id="NPColumn" prefWidth="72.0" sortable="false" text="N° Persone" />
+                  <TableColumn fx:id="TCColumn" prefWidth="119.5" sortable="false" text="Tipologia Camera" />
+               </columns>
+            </TableView>
+            <Label layoutX="444.0" layoutY="7.0" text="Prenotazioni" textFill="#462504">
+               <font>
+                  <Font name="Century Gothic Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextCod" layoutX="42.0" layoutY="342.0" onKeyReleased="#ButtonCod" promptText="Cerca per Codice fiscale" />
+            <TextField fx:id="TextCity" layoutX="42.0" layoutY="13.0" onKeyReleased="#ButtonCity" promptText="Filtra per Città" />
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="14.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../iconeprog3/filter.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="14.0" layoutY="342.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../iconeprog3/Lente.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="68.0" fitWidth="65.0" layoutX="487.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../iconeprog3/passport.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

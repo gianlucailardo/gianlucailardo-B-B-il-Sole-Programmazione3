@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="472.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controllers.ControllerFormTurismo">
+   <children>
+      <AnchorPane fx:id="shieldImageView" prefHeight="92.0" prefWidth="600.0" style="-fx-background-color: #efc6ac;">
+         <children>
+            <ImageView fitHeight="68.0" fitWidth="65.0" layoutX="511.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../iconeprog3/tax.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="79.0" fitWidth="298.0" layoutX="31.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../iconeprog3/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label layoutX="31.0" layoutY="136.0" text=" Nome Cliente" textFill="#462504">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextNome" layoutX="31.0" layoutY="156.0" prefHeight="19.0" prefWidth="370.0" promptText="Nome Cliente" />
+      <Label layoutX="31.0" layoutY="182.0" text="Cognome Cliente" textFill="#462504">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextCogn" layoutX="31.0" layoutY="202.0" prefHeight="19.0" prefWidth="370.0" promptText="Cognome Cliente" />
+      <Label layoutX="31.0" layoutY="228.0" text="Numero Documento" textFill="#462504">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextDoc" layoutX="31.0" layoutY="248.0" prefHeight="19.0" prefWidth="370.0" promptText="Numero Documento" />
+      <Label layoutX="31.0" layoutY="274.0" text="Numero di giorni" textFill="#462504">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="invio" layoutX="417.0" layoutY="151.0" mnemonicParsing="false" onAction="#Invio" prefHeight="35.0" prefWidth="175.0" style="-fx-background-color: #3ddcca;" text="Conferma" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="BackHome" layoutX="420.0" layoutY="203.0" mnemonicParsing="false" onAction="#BackHome" prefHeight="24.0" prefWidth="170.0" text="Torna alla Homepage">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="InvioNonRiuscito" alignment="CENTER" layoutX="415.0" layoutY="252.0" prefHeight="16.0" prefWidth="170.0" text=" " textFill="RED">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="320.0" text="Importo" textFill="#462504">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextImp" layoutX="31.0" layoutY="339.0" onKeyTyped="#solonumeriimp" prefHeight="19.0" prefWidth="370.0" promptText="Importo" />
+      <Label fx:id="InvioRiuscito" alignment="CENTER" layoutX="415.0" layoutY="252.0" prefHeight="16.0" prefWidth="170.0" text=" " textFill="GREEN">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="TextGio" layoutX="31.0" layoutY="295.0" onKeyTyped="#solonumerigiorni" prefHeight="19.0" prefWidth="370.0" promptText="Numero di giorni" />
+      <Label layoutX="195.0" layoutY="101.0" prefHeight="26.0" prefWidth="280.0" text="Vuoi inviare le Tasse di Soggiorno all'UDT?" textFill="#462504">
+         <font>
+            <Font name="Century Gothic Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
